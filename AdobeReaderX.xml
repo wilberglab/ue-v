@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<SettingsLocationTemplate xmlns="http://schemas.microsoft.com/UserExperienceVirtualization/2012/SettingsLocationTemplate">
+  <Name>Adobe Reader X</Name>
+  <ID>Adobe-Reader-AcroRd32-v-10-1</ID>
+  <Version>4</Version>
+  <Author>
+    <Name>Aaron Parker</Name>
+    <Email>aaron@stealthpuppy.com</Email>
+  </Author>
+  <Processes>
+    <Process>
+      <Filename>AcroRd32.exe</Filename>
+      <ProductVersion>
+        <Major Minimum="10" Maximum="10" />
+      </ProductVersion>
+    </Process>
+  </Processes>
+  <Settings>
+    <Registry>
+      <Path Recursive="true">Software\Adobe\Acrobat Reader\10.0</Path>
+    </Registry>
+    <Registry>
+      <Path>Software\Adobe\CommonFiles\Usage\Reader 10</Path>
+    </Registry>
+    <Registry>
+      <Path Recursive="true">Software\Adobe\Adobe Synchronizer\10.0</Path>
+    </Registry>
+    <File>
+      <Root>
+        <EnvironmentVariable>APPDATA</EnvironmentVariable>
+      </Root>
+      <Path Recursive="true">Adobe\Acrobat\10.0</Path>
+    </File>
+  </Settings>
+</SettingsLocationTemplate>

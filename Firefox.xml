@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<SettingsLocationTemplate xmlns="http://schemas.microsoft.com/UserExperienceVirtualization/2012/SettingsLocationTemplate">
+  <Name>Firefox</Name>
+  <ID>Firefox-all</ID>
+  <Version>1</Version>
+  <Author>
+    <Name>Bernd Wilberg</Name>
+    <Email>bernd.wilberg@hug.de</Email>
+  </Author>
+  <Processes>
+    <Process>
+      <Filename>firefox.exe</Filename>
+    </Process>
+  </Processes>
+  <Settings>
+    <File>
+      <Root>
+        <EnvironmentVariable>APPDATA</EnvironmentVariable>
+      </Root>
+      <Path>Mozilla\Firefox</Path>
+      <FileMask>profiles.ini</FileMask>
+    </File>
+    <File>
+      <Root>
+        <EnvironmentVariable>APPDATA</EnvironmentVariable>
+      </Root>
+      <Path Recursive="true">Mozilla\Firefox\Profiles</Path>
+    </File>
+  </Settings>
+</SettingsLocationTemplate>
